@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "productId": "160",
+      "description": "vassoura bellinha",
+      "quantity": "12",
+      "ean13": "456987",
+      "dun14": "12365478",
+      "ncm": "96039000",
+      "grupo": {
+        "id": "8",
+        "name": "VASSOURAS"
+      },
+      "materials": [],
+      "services": [],
+      "id": 1
+    }
+  ],
+  "grupos": [
+    {
+      "id": 1,
+      "name": "ESCOVAS"
+    },
+    {
+      "id": 2,
+      "name": "ESFREGÕES"
+    },
+    {
+      "id": 3,
+      "name": "ESPONJAS"
+    },
+    {
+      "id": 4,
+      "name": "PÁS"
+    },
+    {
+      "id": 5,
+      "name": "RODOS"
+    },
+    {
+      "id": 6,
+      "name": "SACOS PARA LIXO"
+    },
+    {
+      "id": 7,
+      "name": "UTILIDADES DOMÉSTICAS"
+    },
+    {
+      "id": 8,
+      "name": "VASSOURAS"
+    },
+    {
+      "id": 9,
+      "name": "VASSOURÕES"
+    }
+  ]
+}

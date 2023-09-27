@@ -1,0 +1,21 @@
+.radioControl {
+  display: flex;
+  border: 1px solid #7b7b7b;
+  padding: 5px;
+  border-radius: 5px;
+  flex-direction: row;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioControl label {
+  justify-content: flex-end;
+  margin: 0 1em 0 1em;
+  color: blue;
+  font-weight: bold;
+}
+
+.radioControl p {
+  font-weight: bold;
+}

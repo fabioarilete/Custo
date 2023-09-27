@@ -1,0 +1,23 @@
+crear projeto react:
+npx create-react-app .
+
+instalar dependencias:
+npm install json-server react-icons react-router-dom uuid
+
+testar se está rodando:
+npm start
+
+fazer uma limpa nos arquivos-
+excluir os seguintes arquivos-
+Na pasta SRC :
+* App.css
+* App.test
+* logo.svg
+* reportWebVitals.js
+* setupTests.js
+
+no arquivo App.js limpar e deixar apenas a função simples com uma div e um p com o tema do projeto.
+
+no arquivo Index.js apagar o webVitals
+
+

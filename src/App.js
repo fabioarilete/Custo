@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Registers from "./components/pages/Registers";
+import Reports from "./components/pages/Reports";
+import Management from "./components/pages/Managements";
+import Settings from "./components/pages/Settings";
+import Login from "./components/pages/Login";
 
-function App() {
+import Container from "./components/layout/Container";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import NewCost from "./components/pages/NewCost";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Container customClass="min-height">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/registers" element={<Registers />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/newCost" element={<NewCost />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
   );
 }
-
-export default App;
