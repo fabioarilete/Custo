@@ -5,15 +5,36 @@
       "description": "vassoura bellinha",
       "quantity": "12",
       "ean13": "456987",
-      "dun14": "12365478",
+      "dun14": "987654321",
       "ncm": "96039000",
       "grupo": {
         "id": "8",
         "name": "VASSOURAS"
       },
+      "st": "0",
+      "tipo": "1",
+      "simples": "0",
       "materials": [],
       "services": [],
       "id": 1
+    },
+    {
+      "productId": "275",
+      "description": "rodo",
+      "quantity": "12",
+      "ean13": "456987",
+      "dun14": "12365478",
+      "ncm": "96369873",
+      "st": "0",
+      "tipo": "1",
+      "simples": "0",
+      "grupo": {
+        "id": "5",
+        "name": "RODOS"
+      },
+      "materials": [],
+      "services": [],
+      "id": 2
     }
   ],
   "grupos": [
@@ -52,6 +73,35 @@
     {
       "id": 9,
       "name": "VASSOURÕES"
+    }
+  ],
+  "rawMaterialRegister": [],
+  "operationsRegister": [],
+  "markUp": [],
+  "units": [
+    {
+      "id": 1,
+      "name": "UN"
+    },
+    {
+      "id": 2,
+      "name": "DZ"
+    },
+    {
+      "id": 3,
+      "name": "KG"
+    },
+    {
+      "id": 4,
+      "name": "LT"
+    },
+    {
+      "id": 5,
+      "name": "FD"
+    },
+    {
+      "id": 6,
+      "name": "PT"
     }
   ]
 }

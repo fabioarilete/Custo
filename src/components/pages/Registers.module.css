@@ -1,0 +1,18 @@
+.registerContainer {
+  display: block;
+  width: 100%;
+}
+
+.title h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.registers {
+  display: flex;
+  width: 100vh;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}

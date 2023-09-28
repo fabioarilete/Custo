@@ -15,7 +15,11 @@
   margin: 0 1em;
 }
 
-.socialList li:hover {
+.socialList a {
+  color: #fff;
+}
+
+.socialList a:hover {
   color: #ffbb33;
 }
 

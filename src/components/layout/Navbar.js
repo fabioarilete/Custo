@@ -19,13 +19,16 @@ export default function Navbar() {
             <Link to="/registers">Cadastros</Link>
           </li>
           <li className={styles.item}>
+            <Link to="/costs">Custos</Link>
+          </li>
+          <li className={styles.item}>
             <Link to="/management">Gestão</Link>
           </li>
           <li className={styles.item}>
             <Link to="/reports">Relatórios</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/settings">Configurações</Link>
+            <Link to="/settings">Configuração</Link>
           </li>
           <li className={styles.item}>
             <Link to="/login">Login</Link>

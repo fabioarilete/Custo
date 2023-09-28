@@ -6,14 +6,18 @@ export default function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.socialList}>
         <li>
-          <FaFacebook />
+          <a href="https://www.facebook.com/sigasaofrancisco" target="blank">
+            <FaFacebook />
+          </a>
         </li>
         <li>
-          <FaInstagram />
+          <a href="https://www.instagram.com/sigasaofrancisco/" target="blank">
+            <FaInstagram />
+          </a>
         </li>
       </ul>
       <p className={styles.copyRight}>
-        <span>Custo - São Francisco</span> &copy; 2023
+        <span>Custos - São Francisco</span> &copy; 2023
       </p>
     </footer>
   );

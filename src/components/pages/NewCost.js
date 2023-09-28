@@ -19,7 +19,7 @@ export default function NewCost() {
       .then((data) => {
         console.log(data);
         //redirect
-        navigate("/products", {
+        navigate("/costs", {
           state: { message: "Produto criado com sucesso!" },
         });
       })

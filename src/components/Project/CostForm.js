@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 import Input from "../form/Input.js";
-import InputRadio from "../form/InputRadio.js";
 import Select from "../form/Select.js";
 import SubmitButton from "../form/SubmitButton.js";
 
 import styles from "./CostForm.module.css";
+import RadioButtons from "../form/RadioButtons.js";
 
 export default function CostForm({ handleSubmit, btnText, productData }) {
   const [grupos, setGrupos] = useState([]);
@@ -27,7 +27,6 @@ export default function CostForm({ handleSubmit, btnText, productData }) {
 
   const submit = (e) => {
     e.preventDefault();
-    // console.log(product);
     handleSubmit(product);
   };
 
@@ -98,32 +97,39 @@ export default function CostForm({ handleSubmit, btnText, productData }) {
         value={product.ncm ? product.ncm : ""}
       />
 
+      <RadioButtons
+        text="Substituição Tributária: "
+        value={product.st}
+        name="st"
+        label1="Sim"
+        label2="Não"
+        handleOnChange={handleChange}
+      />
+
+      <RadioButtons
+        text="Tipo do Produto: "
+        value={product.tipo}
+        name="tipo"
+        label1="Produzido"
+        label2="Comprado"
+        handleOnChange={handleChange}
+      />
+
+      <RadioButtons
+        text="SFCO x STTE: "
+        value={product.simples}
+        name="simples"
+        label1="Sim"
+        label2="Não"
+        handleOnChange={handleChange}
+      />
+
       <Select
         name="grupoId"
         text="Selecione o Grupo de Produto"
         options={grupos}
         handleOnChange={handleGroup}
         value={product.grupo ? product.grupo.id : ""}
-      />
-
-      <InputRadio
-        text="Substituição Tributária: "
-        name="st"
-        firstLabel="Sim "
-        secondLabel="Não "
-      />
-      <InputRadio
-        text="Tipo: "
-        name="tipo"
-        firstLabel="Produzido "
-        secondLabel="Comprado "
-      />
-
-      <InputRadio
-        text="Sfco x StTe: "
-        name="simples"
-        firstLabel="Sim "
-        secondLabel="Não "
       />
 
       <SubmitButton text={btnText} />

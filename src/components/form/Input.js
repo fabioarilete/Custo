@@ -7,6 +7,7 @@ export default function Input({
   placeholder,
   handleOnChange,
   value,
+  ...rest
 }) {
   return (
     <div className={styles.formControl}>
@@ -18,6 +19,7 @@ export default function Input({
         placeholder={placeholder}
         onChange={handleOnChange}
         value={value}
+        {...rest}
       />
     </div>
   );
