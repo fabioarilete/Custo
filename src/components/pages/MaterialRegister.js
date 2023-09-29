@@ -14,7 +14,8 @@ export default function MaterialRegister() {
     })
       .then((res) => res.json())
       .then((data) => {
-        navigate("/materials", {
+        console.log(data);
+        navigate("/listMaterials", {
           state: { message: "Material cadastrado com sucesso!" },
         });
       })

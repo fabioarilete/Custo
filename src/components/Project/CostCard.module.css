@@ -1,0 +1,55 @@
+.costCard {
+  padding: 1em;
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  width: 24%;
+  margin: 0.5%;
+}
+
+.costCard h4 {
+  background-color: black;
+  color: #ffbb33;
+  padding: 0.4em;
+  margin-bottom: 1.3em;
+}
+
+.costCard p {
+  color: #7a7a7a;
+  margin-bottom: 1em;
+}
+
+.costCard span {
+  font-weight: bold;
+}
+
+.costCardActions {
+  margin-top: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.costCardActions a,
+.costCardActions button {
+  text-decoration: none;
+  background-color: #ddddea;
+  color: black;
+  font-size: 0.9em;
+  padding: 0.6em 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.costCardActions svg {
+  margin-right: 0.5em;
+}
+
+.costCardActions a:hover,
+.costCardActions button:hover {
+  background-color: black;
+  color: #ffbb33;
+}

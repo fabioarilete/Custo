@@ -12,7 +12,7 @@ export default function MaterialsForm({ handleSubmit, btnText, materialData }) {
   const [material, setMaterial] = useState(materialData || {});
 
   useEffect(() => {
-    fetch("http://localhost:5000/units", {
+    fetch("http://localhost:5000/unitsRegister", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

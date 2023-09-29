@@ -6,7 +6,7 @@ export default function NewCost() {
   const navigate = useNavigate();
   function createPost(product) {
     product.materials = [];
-    product.services = [];
+    product.operations = [];
 
     fetch("http://localhost:5000/products", {
       method: "POST",

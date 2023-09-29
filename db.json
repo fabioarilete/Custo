@@ -5,36 +5,16 @@
       "description": "vassoura bellinha",
       "quantity": "12",
       "ean13": "456987",
-      "dun14": "987654321",
-      "ncm": "96039000",
+      "st": "0",
+      "tipo": "0",
+      "simples": "0",
       "grupo": {
         "id": "8",
         "name": "VASSOURAS"
       },
-      "st": "0",
-      "tipo": "1",
-      "simples": "0",
       "materials": [],
-      "services": [],
+      "operations": [],
       "id": 1
-    },
-    {
-      "productId": "275",
-      "description": "rodo",
-      "quantity": "12",
-      "ean13": "456987",
-      "dun14": "12365478",
-      "ncm": "96369873",
-      "st": "0",
-      "tipo": "1",
-      "simples": "0",
-      "grupo": {
-        "id": "5",
-        "name": "RODOS"
-      },
-      "materials": [],
-      "services": [],
-      "id": 2
     }
   ],
   "grupos": [
@@ -76,32 +56,121 @@
     }
   ],
   "rawMaterialRegister": [],
-  "operationsRegister": [],
-  "markUp": [],
-  "units": [
+  "operationsRegister": [
     {
-      "id": 1,
-      "name": "UN"
+      "description": "INJETORA",
+      "value": "110",
+      "unit": {
+        "id": "7",
+        "name": "HR"
+      },
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "DZ"
+      "description": "Montagem",
+      "value": "45",
+      "unit": {
+        "id": "7",
+        "name": "HR"
+      },
+      "id": 2
+    }
+  ],
+  "markUpsRegister": [
+    {
+      "description": "com st",
+      "impostos": "6",
+      "commissao": "8.7",
+      "administracao": "6",
+      "frete": "8",
+      "financeiro": "4",
+      "promotores": "2",
+      "marketing": "2",
+      "bonificacoes": "2",
+      "lucro": "15",
+      "id": 2
+    }
+  ],
+  "unitsRegister": [
+    {
+      "name": "UN",
+      "qt": "1",
+      "id": 1
     },
     {
-      "id": 3,
-      "name": "KG"
+      "name": "DZ",
+      "qt": "12",
+      "id": 2
     },
     {
-      "id": 4,
-      "name": "LT"
+      "name": "KG",
+      "qt": "1",
+      "id": 3
     },
     {
-      "id": 5,
-      "name": "FD"
+      "name": "LT",
+      "qt": "1",
+      "id": 4
     },
     {
-      "id": 6,
-      "name": "PT"
+      "name": "HR",
+      "qt": "1",
+      "id": 5
+    },
+    {
+      "name": "PT20",
+      "qt": "20",
+      "id": 6
+    },
+    {
+      "name": "PT36",
+      "qt": "36",
+      "id": 7
+    },
+    {
+      "name": "PT12",
+      "qt": "12",
+      "id": 8
+    },
+    {
+      "name": "PT10",
+      "qt": "10",
+      "id": 9
+    },
+    {
+      "name": "CX6",
+      "qt": "6",
+      "id": 10
+    },
+    {
+      "name": "CX12",
+      "qt": "12",
+      "id": 11
+    },
+    {
+      "name": "CX3",
+      "qt": "3",
+      "id": 12
+    },
+    {
+      "name": "FD25",
+      "qt": "25",
+      "id": 13
+    },
+    {
+      "name": "FD15",
+      "qt": "15",
+      "id": 14
+    },
+    {
+      "name": "FD50",
+      "qt": "50",
+      "id": 15
+    },
+    {
+      "name": "FX06",
+      "qt": "6",
+      "id": 16
     }
   ]
 }

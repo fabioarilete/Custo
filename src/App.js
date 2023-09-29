@@ -7,11 +7,18 @@ import Settings from "./components/pages/Settings";
 import Login from "./components/pages/Login";
 import Costs from "./components/pages/Costs";
 import MaterialRegister from "./components/pages/MaterialRegister";
+import MarkUps from "./components/pages/MarkUps";
+import MarkUpRegister from "./components/pages/MarkUpRegister";
 
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import NewCost from "./components/pages/NewCost";
+import Materials from "./components/pages/Materials";
+import OperationRegister from "./components/pages/OperationRegister";
+import Operations from "./components/pages/Operations";
+import Units from "./components/pages/Units";
+import UnitRegister from "./components/pages/UnitRegister";
 
 export default function App() {
   return (
@@ -28,9 +35,13 @@ export default function App() {
           <Route path="/newCost" element={<NewCost />} />
           <Route path="/costs" element={<Costs />} />
           <Route path="/materials" element={<MaterialRegister />} />
-          <Route path="/operations" element={<Costs />} />
-          <Route path="/markUp" element={<Costs />} />
-          <Route path="/unit" element={<Costs />} />
+          <Route path="/operations" element={<OperationRegister />} />
+          <Route path="/markUps" element={<MarkUpRegister />} />
+          <Route path="/units" element={<UnitRegister />} />
+          <Route path="/listMaterials" element={<Materials />} />
+          <Route path="/listOperations" element={<Operations />} />
+          <Route path="/listMarkUps" element={<MarkUps />} />
+          <Route path="/listUnits" element={<Units />} />
         </Routes>
       </Container>
       <Footer />
